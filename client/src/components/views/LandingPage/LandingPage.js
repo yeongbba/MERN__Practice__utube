@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaCode } from "react-icons/fa";
+// import { FaCode } from "react-icons/fa";
 import { Card, Avatar, Col, Typography, Row } from "antd";
 import axios from "axios";
 import moment from "moment";
@@ -24,7 +24,7 @@ function LandingPage() {
     var seconds = Math.floor(video.duration - minutes * 60);
 
     return (
-      <Col lg={6} md={8} xs={24}>
+      <Col key={index} lg={6} md={8} xs={24}>
         <div style={{ position: "relative" }}>
           <a href={`/video/${video._id}`}>
             <img

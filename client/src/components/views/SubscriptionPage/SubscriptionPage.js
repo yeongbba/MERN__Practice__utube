@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaCode } from "react-icons/fa";
+// import { FaCode } from "react-icons/fa";
 import { Card, Avatar, Col, Typography, Row } from "antd";
 import axios from "axios";
 import moment from "moment";
@@ -21,7 +21,7 @@ function SubscriptionPage() {
           alert("Failed to get subscription videos");
         }
       });
-  }, []);
+  }, [variable]);
 
   const renderCards = Videos.map((video, index) => {
     var minutes = Math.floor(video.duration / 60);
